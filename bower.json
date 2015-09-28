@@ -1,0 +1,23 @@
+{
+  "name": "samarth.xyz",
+  "version": "0.0.1",
+  "homepage": "https://github.com/samarthmshah/samarth.xyz",
+  "authors": [
+    "Samarth Shah <samarthmshah@gmail.com>"
+  ],
+  "description": "Personal website",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "particles.js": "~2.0.0"
+  }
+}

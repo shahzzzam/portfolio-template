@@ -6,7 +6,9 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "flightplan": "*",
-    "particles.js":"*"
+    "flightplan": "~0.6"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.2"
   }
 }
