@@ -1,14 +1,23 @@
 {
   "name": "samarth.xyz",
   "version": "0.0.1",
-  "private": true,
+  "description": "Personal website...",
+  "main": "flightplan.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "flightplan": "~0.6"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samarthmshah/samarth.xyz.git"
+  },
+  "authors": [
+    "Samarth Shah <samarthmshah@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samarthmshah/samarth.xyz/issues"
   },
   "devDependencies": {
-    "webpack": "^1.12.2"
+    "flightplan": "^0.6.4"
   }
 }
