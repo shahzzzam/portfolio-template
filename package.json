@@ -1,11 +1,8 @@
 {
   "name": "samarth.xyz",
   "version": "0.0.1",
-  "description": "Personal website...",
+  "description": "exec fly production to deploy on the server. Keep git up-to-date",
   "main": "flightplan.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samarthmshah/samarth.xyz.git"

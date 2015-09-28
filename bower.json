@@ -6,7 +6,6 @@
     "Samarth Shah <samarthmshah@gmail.com>"
   ],
   "description": "Personal website",
-  "main": "",
   "moduleType": [],
   "license": "MIT",
   "ignore": [
@@ -18,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "particles.js": "~2.0.0"
+      "jquery": "latest",
+      "particles.js": "latest"
   }
 }

@@ -26,6 +26,6 @@
     "commit": "172f5c0890533dd70f364cb7c1a2f0bc04741a49"
   },
   "_source": "git://github.com/VincentGarreau/particles.js.git",
-  "_target": "~2.0.0",
+  "_target": "*",
   "_originalSource": "particles.js"
 }
