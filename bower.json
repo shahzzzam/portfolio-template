@@ -1,23 +1,25 @@
 {
-  "name": "samarth.xyz",
-  "version": "0.0.1",
-  "homepage": "https://github.com/samarthmshah/samarth.xyz",
-  "authors": [
-    "Samarth Shah <samarthmshah@gmail.com>"
-  ],
-  "description": "Personal website",
-  "moduleType": [],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "assets/libs",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-      "jquery": "latest",
-      "particles.js": "latest"
-  }
+    "name": "samarth.xyz",
+    "version": "0.0.1",
+    "homepage": "https://github.com/samarthmshah/samarth.xyz",
+    "authors": [
+        "Samarth Shah <samarthmshah@gmail.com>"
+    ],
+    "description": "My Personal Website",
+    "moduleType": [],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "assets/libs",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "foundation": "zurb/bower-foundation",
+        "font-awesome": "~4.4.0",
+        "particles.js": "~2.0.0",
+        "modernizr": "~3.0.0"
+    }
 }

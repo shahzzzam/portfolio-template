@@ -1,0 +1,13 @@
+@mixin filter_mixin($filter_func: blur(1px)) {
+    -webkit-filter: $filter_func;
+    -moz-filter: $filter_func;
+	-ms-filter: $filter_func;
+	-o-filter: $filter_func;
+	filter: $filter_func;
+}
+/*
+For instance,
+img{
+    @include filter_mixin(blur(5px));
+}
+*/
