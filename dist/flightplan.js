@@ -21,7 +21,7 @@ plan.local(function(local) {
   // local.exec('gulp build');
 
   local.log('Copy files to remote hosts');
-  const changedLocation = local.exec('cd dist/');
+  // const changedLocation = local.exec('cd dist/');
   const filesToCopy = local.exec('git ls-files', {silent: true});
   console.log(filesToCopy);
   const destinationAddress = '~/www/';
