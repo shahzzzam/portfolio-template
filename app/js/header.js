@@ -1,3 +1,5 @@
+"use strict";
+
 (function($, window, document){
     // the $ is now locally scoped
     $(function() {

@@ -1,3 +1,5 @@
+"use strict";
+
 (function($, window, document){
     $(function() {
         // The DOM is ready
