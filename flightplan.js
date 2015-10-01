@@ -29,6 +29,8 @@ plan.local(function(local) {
 plan.remote(function(remote) {
   remote.log('Move folder to web root');
   remote.rm('-rf ~/www/');  // remove old ones
-  remote.exec('cp -a /tmp/'+tmpDir+'/dist/. ~/www/');
-  remote.rm('-rf /tmp/' + tmpDir);
+  remote.log('Removed previous www/ entries')
+  remote.exec('cp -a /tmp/'+tmpDir+'/dist/. ~/www/');  // This is having problems
+  remote.log('Copied the dist to ~/www/')
+  // remote.rm('-rf /tmp/' + tmpDir);
   });

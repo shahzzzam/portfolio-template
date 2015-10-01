@@ -2,6 +2,9 @@
 - This is what I made for me own Portfolio page @ samarth.xyz
 - Feel free to use this since Im outing this as a Template.
 - *Basic scaffolding by using @juliancwirko 's [zurb-foundation-5 generator](https://github.com/juliancwirko/generator-zf5.git), which uses @addyosmani 's [Yeoman](https://github.com/yeoman).*
+
+### Get Started
+
 ```
 git clone https://github.com/samarthmshah/portfolio-template.git
 cd portfolio-template/
