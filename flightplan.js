@@ -29,6 +29,6 @@ plan.local(function(local) {
 plan.remote(function(remote) {
   remote.log('Move folder to web root');
   remote.rm('-rf ~/www/');  // remove old ones
-  remote.sudo('cp -a /tmp/'+tmpDir+'/dist/. ~', {user: 'www'});
+  remote.exec('cp -a /tmp/'+tmpDir+'/dist/. ~/www/');
   remote.rm('-rf /tmp/' + tmpDir);
   });
