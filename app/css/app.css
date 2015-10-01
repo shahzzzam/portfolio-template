@@ -1875,7 +1875,7 @@ body {
   filter: blur(4px);
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/11.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/5.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;

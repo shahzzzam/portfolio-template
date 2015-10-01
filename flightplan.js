@@ -14,17 +14,20 @@ plan.target('production', [
   },
 ]);
 
+var tmpDir = 'example-com-' + new Date().getTime();
+
 // Take a Local flight
 plan.local(function(local) {
-  // uncomment these if you need to run a build on your machine first
-  // local.log('Run build');
-  // local.exec('gulp build');
-
   local.log('Copy files to remote hosts');
-  local.exec('cd dist/');
   const filesToCopy = local.exec('git ls-files', {silent: true});
-  local.log(filesToCopy);
-  const destinationAddress = '~/www/';
-  // rsync files to all the destination's hosts
+  const destinationAddress = '/tmp/' + tmpDir;
+  // rsync files to all the target's remote hosts
   local.transfer(filesToCopy, destinationAddress);
 });
+
+// run commands on the target's remote hosts
+plan.remote(function(remote) {
+  remote.log('Move folder to web root');
+  remote.sudo('cp -R /tmp/' + tmpDir + '/dist ~', {user: 'www'});
+  remote.rm('-rf /tmp/' + tmpDir);
+  });
