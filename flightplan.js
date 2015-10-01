@@ -14,7 +14,7 @@ plan.target('production', [
   },
 ]);
 
-var tmpDir = 'example-com-' + new Date().getTime();
+var tmpDir = 'samarth-xyz-' + new Date().getTime();
 
 // Take a Local flight
 plan.local(function(local) {
@@ -28,6 +28,7 @@ plan.local(function(local) {
 // run commands on the target's remote hosts
 plan.remote(function(remote) {
   remote.log('Move folder to web root');
-  remote.sudo('cp -R /tmp/' + tmpDir + '/dist ~', {user: 'www'});
+  remote.rm('-rf ~/www/');  // remove old ones
+  remote.sudo('cp -a /tmp/'+tmpDir+'/dist/. ~', {user: 'www'});
   remote.rm('-rf /tmp/' + tmpDir);
   });
