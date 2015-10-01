@@ -1,12 +1,14 @@
-// author: samarthmshah
-@import 'custom_variables';
+/*!
+author: samarthmshah
+*/
+@import 'custom_colors';
 @import 'custom_filters';
 $font_weight: 400;
 body {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: $font_weight;
     background-color: $transparent_white_2;
-    background-color: pink;
+    background-color: white; // TODO
 }
 .header_box {
     position: relative;
@@ -16,13 +18,13 @@ body {
     padding: 0;
     top: 0;
     box-shadow: inset 0 0 0 2000px $transparent_white_15;
-    // overflow: hidden;
+    overflow: hidden;
     #hero_image {
-        @include filter_mixin(blur(1.5px));
+        @include filter_mixin(blur(4px));
         height: 100%;
         width: 100%;
         background: {
-            image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/1.jpg");
+            image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(get_random_background());
             position: top center;
             attachment: fixed;
             size: cover;
@@ -38,23 +40,22 @@ body {
     #dp {
         height: 120px;
         width: 120px;
-        -webkit-border-radius: 100%;
+        @include border-radius(100%);
         border: 3px solid white;
     }
     h3 {
         color: white;
-        opacity: 0.9;
-        @media only screen {
+        @include breakpoint(mobileonly) {
             font-size: 2.5em;
             font-weight: 500;
             text-shadow: 2px 3px 4px rgba(0,0,0,0.5);
         }
-        @media only screen and (min-width: 40.063em) {
+        @include breakpoint(tablet) {
             font-size: 2.5em;
             font-weight: 600;
             text-shadow: 3px 4px 5px rgba(0,0,0,0.5);
         }
-        @media only screen and (min-width: 64.063em) {
+        @include breakpoint(laptop) {
             font-size: 2.5em;
             font-weight: 700;
             text-shadow: 4px 5px 6px rgba(0,0,0,0.5);
@@ -62,19 +63,19 @@ body {
     }
     p {
         color: $transparent_white_6;
-        @media only screen {
+        @include breakpoint(mobileonly) {
             font-size: 1em;
             font-weight: 400;
             text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
             line-height: 0.5;
         }
-        @media only screen and (min-width: 40.063em) {
+        @include breakpoint(tablet) {
             font-size: 1.3em;
             font-weight: 600;
             text-shadow: 2px 3px 4px rgba(0,0,0,0.2);
             line-height: 0.5;
         }
-        @media only screen and (min-width: 64.063em) {
+        @include breakpoint(laptop) {
             font-size: 1.3em;
             font-weight: 700;
             text-shadow: 3px 4px 5px rgba(0,0,0, 0.2);
@@ -84,27 +85,53 @@ body {
     ul.inline-list {
         position: absolute;
         left: 50%;
-        margin-left: -171px;
+        margin-left: -193px;
     }
 }
 #hero_location {
     position: absolute;
-    color: white;
-    opacity: 0.5;
-    top: 10px;
+    top: 7px;
     left: 10px;
-    @media only screen {
+    color: white;
+    opacity: 0.3;
+    @include breakpoint(mobileonly) {
         font-size: 0.7em;
         font-weight: 400;
     }
-    @media only screen and (min-width: 40.063em) {
+    @include breakpoint(tablet) {
         font-size: 1.2em;
         font-weight: 500;
     }
-    @media only screen and (min-width: 64.063em) {
+    @include breakpoint(laptop) {
         font-size: 1.6em;
         font-weight: 600;
     }
+}
+#follow{
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    color: white;
+    opacity: 0.7;
+    @include breakpoint(mobileonly) { font-weight: 400; }
+    @include breakpoint(tablet) { font-weight: 500; }
+    @include breakpoint(laptop) { font-weight: 600; }
+}
+.follow-icons{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 1px;
+    margin: 1px 1px;
+}
+.fb-follow{
+    @extend .follow-icons;
+    bottom: 7px;
+    right: 160px;
+}
+.gh-follow{
+    @extend .follow-icons;
+    bottom: 1px;
+    right: 0px;
 }
 .icon {
     color: white;
@@ -112,92 +139,6 @@ body {
     &:hover {
         color: white;
         opacity: 0.8;
-        -webkit-transform: scale(1.1, 1.1);
+        @include scale(1.05, 1.05);
     }
 }
-
-// .button {
-//     font-family: 'Raleway',Helvetica,Arial,sans-serif;
-// }
-//
-// .button-group{
-//     li {
-//         padding-top: 3%;
-//     }
-//
-//     a {
-//         color: black;
-//         background-color: transparent;
-//         &:hover{
-//             color: $transparent_white_4;
-//             background-color: transparent;
-//         }
-//     }
-//
-//     float: none;
-//
-//     @media only screen and (min-width: 40.063em){
-//         float: right;
-//     }
-// }
-//
-// .namelogo {
-//     padding: 20px 10px 0px 10px;
-//     h1 {
-//        font-size: 1.5em;
-//        font-weight: 600;
-//        text-align: center;
-//     }
-//
-//     @media only screen and (min-width: 40.063em){
-//         padding-bottom: 20px;
-//         h1{
-//             font-size: 16px;
-//             text-align: left;
-//         }
-//     }
-//
-//     @media only screen and (min-width: 64.063em) {  // Suuuuper large screens ftw
-//         h1{
-//             font-size: 24px;
-//             text-align: left;
-//         }
-//     }
-// }
-// .about,
-// .work,
-// .contact { padding: 50px 0 0 0 }
-// .about img {
-//    width: 250px;
-//    height: 250px;
-//    border-radius: 150px;
-//    -webkit-border-radius: 150px;
-//    -moz-border-radius: 150px;
-// }
-// .work img:hover {
-//    opacity: 0.5;
-//    -webkit-transition: 0.3s ease;
-//    -moz-transition: 0.3s ease;
-//    -ms-transition: 0.3s ease;
-//    -o-transition: 0.3s ease;
-//    transition: 0.3s ease;
-// }
-// .work li {
-//    height: 140px;
-//    overflow: hidden;
-// }
-// hr {
-//    border: 0;
-//    height: 1px;
-//    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
-//    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
-//    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
-//    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
-//    opacity: 0.8;
-// }
-//
-// footer { padding: 80px 0 10px 0 }
-// footer a:hover {
-//    color: rgba(0,0,0,0.4);
-//    background-color: transparent;
-// }

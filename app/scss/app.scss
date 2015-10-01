@@ -10,70 +10,44 @@
 
 // Behold, here are all the Foundation components.
 @import 'foundation/components/grid';
-@import 'foundation/components/accordion';
-@import 'foundation/components/alert-boxes';
-@import 'foundation/components/block-grid';
-@import 'foundation/components/breadcrumbs';
-@import 'foundation/components/button-groups';
-@import 'foundation/components/buttons';
-@import 'foundation/components/clearing';
-@import 'foundation/components/dropdown';
-@import 'foundation/components/dropdown-buttons';
-@import 'foundation/components/flex-video';
-@import 'foundation/components/forms';
-@import 'foundation/components/icon-bar';
 @import 'foundation/components/inline-lists';
-@import 'foundation/components/joyride';
-@import 'foundation/components/keystrokes';
-@import 'foundation/components/labels';
-@import 'foundation/components/magellan';
-@import 'foundation/components/orbit';
-@import 'foundation/components/pagination';
-@import 'foundation/components/panels';
-@import 'foundation/components/pricing-tables';
-@import 'foundation/components/progress-bars';
-@import 'foundation/components/range-slider';
-@import 'foundation/components/reveal';
-@import 'foundation/components/side-nav';
-@import 'foundation/components/split-buttons';
-@import 'foundation/components/sub-nav';
-@import 'foundation/components/switches';
-@import 'foundation/components/tables';
-@import 'foundation/components/tabs';
-@import 'foundation/components/thumbs';
-@import 'foundation/components/tooltips';
-@import 'foundation/components/top-bar';
-@import 'foundation/components/type';
-@import 'foundation/components/offcanvas';
-@import 'foundation/components/visibility';
+
+// @import 'foundation/components/accordion';
+// @import 'foundation/components/alert-boxes';
+// @import 'foundation/components/block-grid';
+// @import 'foundation/components/breadcrumbs';
+// @import 'foundation/components/button-groups';
+// @import 'foundation/components/buttons';
+// @import 'foundation/components/clearing';
+// @import 'foundation/components/dropdown';
+// @import 'foundation/components/dropdown-buttons';
+// @import 'foundation/components/flex-video';
+// @import 'foundation/components/forms';
+// @import 'foundation/components/icon-bar';
+// @import 'foundation/components/joyride';
+// @import 'foundation/components/keystrokes';
+// @import 'foundation/components/labels';
+// @import 'foundation/components/magellan';
+// @import 'foundation/components/orbit';
+// @import 'foundation/components/pagination';
+// @import 'foundation/components/panels';
+// @import 'foundation/components/pricing-tables';
+// @import 'foundation/components/progress-bars';
+// @import 'foundation/components/range-slider';
+// @import 'foundation/components/reveal';
+// @import 'foundation/components/side-nav';
+// @import 'foundation/components/split-buttons';
+// @import 'foundation/components/sub-nav';
+// @import 'foundation/components/switches';
+// @import 'foundation/components/tables';
+// @import 'foundation/components/tabs';
+// @import 'foundation/components/thumbs';
+// @import 'foundation/components/tooltips';
+// @import 'foundation/components/top-bar';
+// @import 'foundation/components/type';
+// @import 'foundation/components/offcanvas';
+// @import 'foundation/components/visibility';
 
 @import 'partials/appstyles';
-@import 'partials/custom_variables';
+@import 'partials/custom_colors';
 @import 'partials/header';
-// @import 'partials/custom_filters';
-
-@mixin my_blur_filter($px: 1px) {
-    -webkit-filter: blur($px);
-    -moz-filter: blur($px);
-	-ms-filter: blur($px);
-	-o-filter: blur($px);
-	filter: blur($px);
-}
-
-
-div#intro{
-    position: absolute;
-    background-color: $solarized_light;
-    margin: 0px 10px 0px 10px;
-    // @input my_blur_filter(3px);
-    -webkit-filter: blur(0.5px);
-    z-index: 1;
-}
-
-div#content_intro{
-    position: absolute;
-    text-align: center;
-    opacity: .9;
-    z-index: 2;
-    margin: 40px 40px 40px 40px;
-}

@@ -1,16 +1,15 @@
 {
-  "name": "samarth.xyz",
-  "description": "",
-  "version": "0.0.1",
-  "description": "",
-  "homepage": "",
+  "name": "Portfolio Template",
+  "description": "This is a one page Portfolio Template designed with Foundation SASS.",
+  "version": "1.0",
+  "homepage": "https://github.com/samarthmshah/portfolio-template",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Samarth Shah",
+    "email": "samarthmshah@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/samarthmshah/portfolio-template"
   },
   "devDependencies": {
     "load-grunt-tasks": "~3.2.0",
