@@ -1,5 +1,7 @@
-## samarth.xyz
-
+### Intro stuff
+- This is what I made for me own Portfolio page @ samarth.xyz
+- Feel free to use this since Im outing this as a Template.
+- *Basic scaffolding by using @juliancwirko 's [zurb-foundation-5 generator](https://github.com/juliancwirko/generator-zf5.git), which uses @addyosmani 's [Yeoman](https://github.com/yeoman).*
 ```
 git clone https://github.com/samarthmshah/portfolio-template.git
 cd portfolio-template/
@@ -48,5 +50,10 @@ npm install -g flightplan
 ```
 Thereafter, run this:
 ```fly production```
+
+### TODO
+- flightplan doesnt run properly. Works well for the local flights, but having problems with the remote flights.
+
+This is currently WIP since I get less time for this.
 
 Peace.
