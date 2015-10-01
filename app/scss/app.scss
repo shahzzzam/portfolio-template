@@ -3,7 +3,7 @@
 // Licensed under MIT Open Source
 
 @import 'normalize';
-@import 'partials/settings';
+@import 'settings';
 
 // Make sure the charset is set appropriately
 @charset 'UTF-8';
@@ -48,6 +48,6 @@
 // @import 'foundation/components/offcanvas';
 // @import 'foundation/components/visibility';
 
-@import 'partials/appstyles';
-@import 'partials/custom_colors';
-@import 'partials/header';
+@import 'appstyles';
+@import 'custom_colors';
+@import 'header';
