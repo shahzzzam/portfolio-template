@@ -118,14 +118,14 @@ body {
 }
 .follow-icons-base-class {
     @include breakpoint(mobileonly) {
-        transform: scale(0.9, 0.9);
+        @include scale(0.9, 0.9);
         position: absolute;
         margin: 0;
         right: 0;
         bottom: 0;
     }
     @include breakpoint(tablet) {
-        transform: scale(0.8, 0.8);
+        @include scale(0.8, 0.8);
         position: relative;
         margin: 0.5px;
         clear: right;

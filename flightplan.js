@@ -3,7 +3,7 @@
 const plan = require('flightplan');
 
 const appName = 'samarth-xyz'
-const host = '108.167.189.59'
+const host = 'samarth.xyz'
 const username = 'samarthmshah';
 const port = 2222
 
