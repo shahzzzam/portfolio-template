@@ -8,14 +8,14 @@ const username = 'samarthmshah';
 const port = 2222
 
 // configuration
-plan.target('production', [{
+plan.target('it', [{
     host: host,
     username: username,
     port: port,
     agent: process.env.SSH_AUTH_SOCK
 }, ]);
 
-if (plan.runtime.target === 'production') {
+if (plan.runtime.target === 'it') {
     var isReady = transport.prompt('Ready for deploying to production? [yes]');
     if (isReady.indexOf('yes') === -1) {
         plan.abort('User canceled the damn flight!');
@@ -44,6 +44,8 @@ plan.local('deploy', function(local) {
     local.transfer(filesToCopy, destinationAddress);
 });
 
+// TODO DOESNT WORK.
+// BETTER WRITE A CRON JOB...Damn!
 // run commands on the target's remote hosts
 plan.remote('copy', function(remote) {
     remote.log('Move folder to web root. The User is ' + remote.hostname());

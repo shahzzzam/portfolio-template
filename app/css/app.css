@@ -1853,11 +1853,11 @@ img{
 body {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.02);
   background-color: white;
+  opacity: 2;
 }
 
-.header_box {
+.header-box {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -1867,15 +1867,11 @@ body {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-.header_box #hero_image {
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -ms-filter: blur(4px);
-  -o-filter: blur(4px);
-  filter: blur(4px);
+.header-box #hero-image {
+  opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/13.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -1901,34 +1897,35 @@ body {
 }
 @media (max-width: 40em) {
   .intro-text h3 {
-    font-size: 2.5em;
-    font-weight: 500;
+    font-size: 2.25em;
+    font-weight: 450;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   }
 }
 @media (min-width: 40.063em) {
   .intro-text h3 {
-    font-size: 2.5em;
-    font-weight: 600;
+    font-size: 2.25em;
+    font-weight: 500;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
   }
 }
 @media (min-width: 64.063em) {
   .intro-text h3 {
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size: 2.25em;
+    font-weight: 600;
     text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.5);
   }
 }
 .intro-text p {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
+  opacity: 8;
 }
 @media (max-width: 40em) {
   .intro-text p {
     font-size: 1em;
     font-weight: 400;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-    line-height: 0.5;
+    line-height: 0.1;
   }
 }
 @media (min-width: 40.063em) {
@@ -1936,7 +1933,7 @@ body {
     font-size: 1.3em;
     font-weight: 600;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
-    line-height: 0.5;
+    line-height: 0.1;
   }
 }
 @media (min-width: 64.063em) {
@@ -1944,7 +1941,7 @@ body {
     font-size: 1.3em;
     font-weight: 700;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
-    line-height: 0.5;
+    line-height: 0.1;
   }
 }
 .intro-text ul.inline-list {
@@ -1953,27 +1950,27 @@ body {
   margin-left: -193px;
 }
 
-#hero_location {
+#hero-location {
   position: absolute;
   top: 7px;
   left: 10px;
   color: white;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 @media (max-width: 40em) {
-  #hero_location {
+  #hero-location {
     font-size: 0.7em;
     font-weight: 400;
   }
 }
 @media (min-width: 40.063em) {
-  #hero_location {
+  #hero-location {
     font-size: 1.2em;
     font-weight: 500;
   }
 }
 @media (min-width: 64.063em) {
-  #hero_location {
+  #hero-location {
     font-size: 1.6em;
     font-weight: 600;
   }
@@ -1981,51 +1978,64 @@ body {
 
 #follow {
   position: absolute;
-  bottom: 7px;
-  right: 10px;
+  bottom: 2px;
+  right: 2px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.8;
 }
+
 @media (max-width: 40em) {
-  #follow {
-    font-weight: 400;
+  .follow-icons-base-class, .fb-follow, .gh-follow, .so-follow {
+    transform: scale(0.9, 0.9);
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 40.063em) {
-  #follow {
-    font-weight: 500;
+  .follow-icons-base-class, .fb-follow, .gh-follow, .so-follow {
+    transform: scale(0.8, 0.8);
+    position: relative;
+    margin: 0.5px;
+    clear: right;
+    float: right;
   }
 }
 @media (min-width: 64.063em) {
-  #follow {
-    font-weight: 600;
+  .follow-icons-base-class, .fb-follow, .gh-follow, .so-follow {
+    position: relative;
+    margin: 1px;
+    clear: right;
+    float: right;
   }
 }
 
-.follow-icons, .fb-follow, .gh-follow {
-  position: absolute;
-  display: inline-block;
-  padding: 1px 1px;
-  margin: 1px 1px;
+@media (max-width: 40em) {
+  .fb-follow {
+    bottom: 45px;
+  }
 }
 
-.fb-follow {
-  bottom: 7px;
-  right: 160px;
+@media (max-width: 40em) {
+  .gh-follow {
+    bottom: 20px;
+  }
 }
 
-.gh-follow {
-  bottom: 1px;
-  right: 0px;
+@media (max-width: 40em) {
+  .so-follow {
+    bottom: 0;
+  }
 }
 
 .icon {
   color: white;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 .icon:hover {
   color: white;
-  opacity: 0.8;
+  opacity: 1;
   -moz-transform: scale(1.05, 1.05);
   -o-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);

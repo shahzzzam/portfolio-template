@@ -21,33 +21,37 @@
         });
 
         var triple = wScroll * 3;
-        var location_op = 0.2;
-        $('#hero_location').css({
+        var minLocationOpacity = 0.5;
+        $('#hero-location').css({
             '-webkit-transform': 'translate(0px, '+ triple +'%)',
             '-moz-transform': 'translate(0px, '+ triple +'%)',
             '-ms-transform': 'translate(0px, '+ triple +'%)',
             '-o-transform': 'translate(0px, '+ triple +'%)',
             'transform': 'translate(0px, '+ triple +'%)',
-            'opacity': location_op + wScroll/150  // is such computation good for realtime scroll? todo
+            'opacity': minLocationOpacity + (wScroll/300)  // is such computation good for realtime scroll? todo
         });
 
-        var follow_op = 0.5;
+        var followScrollRate = wScroll / 2.5;
         $('#follow').css({
-            '-webkit-transform': 'translate(0px, -'+ wScroll +'%)',
-            '-moz-transform': 'translate(0px, -'+ wScroll +'%)',
-            '-ms-transform': 'translate(0px, -'+ wScroll +'%)',
-            '-o-transform': 'translate(0px, -'+ wScroll +'%)',
-            'transform': 'translate(0px, -'+ wScroll +'%)',
-            'opacity': follow_op + (wScroll/400)
+            '-webkit-transform': 'translate(0px, -'+ followScrollRate +'%)',
+            '-moz-transform': 'translate(0px, -'+ followScrollRate +'%)',
+            '-ms-transform': 'translate(0px, -'+ followScrollRate +'%)',
+            '-o-transform': 'translate(0px, -'+ followScrollRate +'%)',
+            'transform': 'translate(0px, -'+ followScrollRate +'%)',
         });
 
-        var backgroundOpacity = 4 - (wScroll / 40);
-        $('#hero_image').css({
-            '-webkit-filter': 'blur('+ backgroundOpacity +'px)',
-            '-moz-filter': 'blur(0px, '+ backgroundOpacity +'px)',
-            '-ms-filter': 'blur(0px, '+ backgroundOpacity +'px)',
-            '-o-filter': 'blur(0px, '+ backgroundOpacity +'px)',
-            'filter': 'blur(0px, '+ backgroundOpacity +'px)'
+        // var backgroundOpacity = 4 - (wScroll / 40);  // TODO too much load on browser?
+        // $('#hero_image').css({
+        //     '-webkit-filter': 'blur('+ backgroundOpacity +'px)',
+        //     '-moz-filter': 'blur(0px, '+ backgroundOpacity +'px)',
+        //     '-ms-filter': 'blur(0px, '+ backgroundOpacity +'px)',
+        //     '-o-filter': 'blur(0px, '+ backgroundOpacity +'px)',
+        //     'filter': 'blur(0px, '+ backgroundOpacity +'px)'
+        // });
+
+        var backgroundOpacity = 0.5;
+        $('#hero-image').css({
+            'opacity': backgroundOpacity + (wScroll/360)
         });
     });
 
