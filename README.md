@@ -62,7 +62,7 @@ After making all those changes, make changes to ``flightplan.js``. Change `appNa
 After doing that, run below commands to minify everything to ``dist/`` folder.
 
 ```sh
-$ grunt serve
+$ grunt build
 ```
 
 After that's done, run to check whether your `dist` (where your minified and compiled files go) is OK.
