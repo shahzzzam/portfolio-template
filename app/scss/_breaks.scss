@@ -1,0 +1,39 @@
+@import "custom_filters";
+
+#ambreakpic{
+    box-shadow: inset 0 0 0 2000px $transparent_white_15;
+    position: relative;
+    height: 400px;
+    @include filter-mixin(blur(1.5px));
+    background: {
+        image: url('../images/12.jpg');
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+        position: center center;
+    }
+}
+
+#ambreakp{
+    position: absolute;
+    margin-left: 45%;
+    h3 {
+        color: white;
+        margin-top: 195px;
+        @include breakpoint(mobileonly) {
+            font-size: 2.25em;
+            font-weight: 450;
+            text-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+        }
+        @include breakpoint(tablet) {
+            font-size: 2.25em;
+            font-weight: 500;
+            text-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+        }
+        @include breakpoint(laptop) {
+            font-size: 2.25em;
+            font-weight: 600;
+            text-shadow: 4px 5px 6px rgba(0,0,0,0.5);
+        }
+    }
+}

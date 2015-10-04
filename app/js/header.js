@@ -6,8 +6,7 @@
     var goParallax = function() {
         var $context  = $(this);
         var wScroll   = $context.scrollTop(); // how far Im scrolled down (in px)
-        console.log(wScroll);
-
+        
         if (wScroll < 400){
             // cache $ elements for performance...
             var $intro_text     = $('.intro-text');

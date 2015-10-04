@@ -110,6 +110,9 @@ body {
     }
 }
 #follow {
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
     position: absolute;
     bottom: 2px;
     right: 2px;

@@ -52,3 +52,9 @@
 @import 'appstyles';
 @import 'custom_colors';
 @import 'header';
+@import 'topbar';
+@import 'breaks';
+
+.row{
+    max-width: 100%;
+}

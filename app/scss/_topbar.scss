@@ -1,0 +1,49 @@
+@import 'custom_filters';
+
+#wtf-magellan{
+    opacity: 0.95;
+}
+
+#nav-name{
+    float: left;
+    padding: 5px 10px;
+    font:{
+        weight: 100;
+        size: 1.2em;
+    };
+    @media (max-width: 830px){
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        border: none;
+    };
+}
+
+.sub-nav{
+    float: right;
+    > {
+        dd{
+            padding: 5px 0px;
+            @media (max-width: 715px){
+                font-size: 0.7em;
+            }
+        }
+    }
+    @media (max-width: 835px){
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    @media (max-width: 715px){
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    @media (max-width: 620px){
+        display: none;
+    }
+}
