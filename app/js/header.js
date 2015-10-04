@@ -7,7 +7,7 @@
         var $context  = $(this);
         var wScroll   = $context.scrollTop(); // how far Im scrolled down (in px)
         
-        if (wScroll < 400){
+        if (wScroll < 900){
             // cache $ elements for performance...
             var $intro_text     = $('.intro-text');
             var $hero_location  = $('#hero-location');
