@@ -1,8 +1,4 @@
-/*!
-samarth.xyz
-custom_filters.scss
-author: samarthmshah
-*/
+/*!  author: samarthmshah */
 @mixin filter_mixin($filter_func: blur(1px)) {
     -webkit-filter: $filter_func;
     -moz-filter: $filter_func;

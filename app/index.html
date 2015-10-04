@@ -1,8 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth Shah</title>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -15,7 +17,8 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
-    <script src="bower_components/modernizr/src/Modernizr.js"></script>
+    <script src="bower_components/modernizr/bin/modernizr.js"></script>
+
     <!-- endbuild -->
 </head>
 
@@ -56,6 +59,7 @@
             <p>State University of New York, Albany</p>
             <ul class="inline-list">
                 <li>
+                    <a data-tooltip aria-haspopup="true" class="has-tip" title="Is great!">Accessibility</a>
                     <a title="LinkedIn" class="icon" href="https://www.linkedin.com/in/samarthmshah" target="_blank">
                         <i class="fa fa-linkedin fa-3x"></i>
                     </a>
@@ -94,8 +98,44 @@
         </div>
     </div>
 
+    <!-- <div id="sticky"> -->
+        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: small">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Samarth Shah</a></h1>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon">
+                    <a href="#">
+                        <span>Menu</span>
+                    </a>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li class="active"><a href="#">Right Button Active</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Right Button Dropdown</a>
+                        <ul class="dropdown">
+                            <li><a href="#">First link in dropdown</a></li>
+                            <li class="active"><a href="#">Active link in dropdown</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Left Nav Section -->
+                <ul class="left">
+                    <li><a href="#">Left Nav Button</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+
+
     <div class="row">
-        <div class="large-12 columns panel">
+        <div class="small-10 medium-10 large-10 columns panel">
             <h1>Hello, </h1>
             <p>This website is under construction. Please visit after a few days</p>
             <span>Note: Did you notice the awesome parallax effect header? Completely made by me.</span>
@@ -106,8 +146,69 @@
     </div>
 
     <div class="row">
-        <div style="height: 1000px"></div>
+        <div class="small-12 small-centered medium-12 medium-centered large-12 columns" style="height: 1000px">
+            <pre>
+--------------------------------------------------------------------------------------------------------------
+                                    SAMARTH SHAH
+--------------------------------------------------------------------------------------------------------------
+EDUCATION                             EMPLOYMENT
+State University of NY,               inAppAd, Inc. | SOFTWARE ENGINEERING INTERN
+Albany                                An ad tech startup providing advertising solutions.
+M.S. IN COMPUTER SCIENCE              New York City, NY | Summer 2015
+Expected: Dec 2015 | Albany, NY       * Built an Advertiser-facing API from scratch using Flask and RESTful principles.
+Cum. GPA: 4.0                         * Devised an API rate-limiting wrapper and response-caching strategy using Redis.
+                                      * Unit-tested with coverage of 60% and optimized code using a profiler.
+Gujarat Technological                 * Chiefly handled logging and i18n; and created entire API documentation in
+University                              Python-Sphinx using reStructured Text.
+B.S. IN COMPUTER SCIENCE              * Actively worked with Database and DevOps (nginx) team.
+2009-2014 | Gujarat, India            * Technologies: Python, MySQL, Redis, uWSGI, Git/Bitbucket, Postman, Redmine.
+Cum. GPA: 3.12 (First Class)
+                                      Innoventaa Technocrats | WEB DEVELOPER INTERN
+                                      Project: E-Governance for Road Tendering
+PERSONALDETAILS                       Ahmedabad, India | MAY 2013-MAY 2014
+Email:                                * EGRT is a web portal making the experience of bidding and road tendering for the
+samarthmshah@gmail.com                  supplier company and government organizations seamless.
+Mobile:                               * Built the views using JSP, Bootstrap CSS, jQuery/AJAX.
+518-428-0722                          * Built the controllers and models from scratch using Servlets and Hibernate ORM.
+Address:                                mapping,and Filter API for User Auth.
+Jersey City, NJ                       * Technologies: J2EE/Java, Apache-Tomcat, SQLYog and Hibernate ORM.
+Links
+URL://samarth.xyz
+GitHub://samarthmshah                PROJECTS
+LinkedIn://samarthmshah              SomePlaceElse | Python | 2015
+                                     * A food-recommendation app for NewYork using statistical concepts like
+EXTRA-CURRICULA                        Associative-Rule Mining. Used Twitter RestAPI, Mashable API and Yelp API.
+* 95th Percentile in All India GATE  * Code &amp; Paper: Github://SomePlaceElse/SomePlaceElse
+Exam.                               GameZone | Java | 2015
+* Worked as a TA for Java in         * Online gaming market prototype having features like: UserAuth. (Hashing),
+Undergraduate.                         Inventory Management, Shopping Cart, Checkout with PayPal API.
+                                     * Technologies: Java/J2EE, CSS Bootstrap, jQuery, PostgreSQL, Apache-Tomcat.
+TECHNICALSKILLS
+Languages                           EDPrototype | Java | 2014
+* Java * Python                      * A Java Applet which is able to en/decrypt using Shamir's Secret Sharing, DES, AES,
+* SQL * JavaScript * HTML5             and RSA.
+* CSS3(SASS/Bootstrap/Foundation)    * Code&amp; Paper: Github://samarthmshah/Image-Text-Encryption-prototype
+* LaTeX
+
+Databases                           Live Cricket Scores Chrome Web Store | JavaScript | 2015
+* PostgreSQL * MySQL                 * A Google Chrome extension which fetches live cricket updates using CrickInfo API
+* SQLYog * Redis                       (XMLRSS).
+* MongoDB (basic)
+                                    Know-Your-City | know-your-city.appspot.com | JavaScript | 2015
+OS                                   * A website which gives information/news/photos about the city based on the city,
+* MacOSX * Linux * Windows             state name using WikiMedia API, New York Times API and Google Street View API.
+
+Tools/Frameworks                    YACDA | Yet Another Community Detection Algorithm | Python | 2015
+* Grunt * npm/Bower * Ant            * Proposed an innovative way to detect clusters in time-evolving networks. Used
+* Maven * Apache-Tomcat                Locality Sensitive Hashing to find similarity between nodes, and conductance as a
+* nginx (basic) * Git * vim            metric to find top candidates.
+* Eclipse * PyCharm * IntelliJ       * Code &amp; Paper: Github://samarthmshah/YACDA
+* TeXShop
+            </pre>
+        </div>
     </div>
+
+
 
     <!--  ============================================================  -->
 
@@ -120,6 +221,9 @@
     <!-- build:js js/vendor/foundation.min.js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
     <!--<script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.alert.js"></script>
@@ -128,15 +232,12 @@
     <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script> -->
-    <!-- <script src="bower_components/particles.js/particles.js"></script> -->
+    <script src="bower_components/particles.js/particles.js"></script> -->
 
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
