@@ -19,7 +19,6 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "font-awesome": "~4.4.0",
-    "particles.js": "~2.0.0",
-    "modernizr": "~3.0.0"
+    "particles.js": "~2.0.0"
   }
 }

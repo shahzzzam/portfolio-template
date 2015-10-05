@@ -36,11 +36,16 @@ module.exports = function(grunt) {
 			]
 		},
 
+
+
 		clean: {
 			dist: {
 				src: ['<%= dist %>/*']
 			},
 		},
+
+
+
 		copy: {
 			dist: {
 				files: [{
@@ -58,6 +63,8 @@ module.exports = function(grunt) {
 			},
 		},
 
+
+
 		imagemin: {
 			target: {
 				files: [{
@@ -69,12 +76,16 @@ module.exports = function(grunt) {
 			}
 		},
 
+
+
 		uglify: {
 			options: {
 				preserveComments: 'some',
 				mangle: false
 			}
 		},
+
+
 
 		useminPrepare: {
 			html: ['<%= app %>/index.html'],
@@ -83,6 +94,8 @@ module.exports = function(grunt) {
 			}
 		},
 
+
+
 		usemin: {
 			html: ['<%= dist %>/**/*.html', '!<%= app %>/bower_components/**'],
 			css: ['<%= dist %>/css/**/*.css'],
@@ -90,6 +103,8 @@ module.exports = function(grunt) {
 				dirs: ['<%= dist %>']
 			}
 		},
+
+
 
 		watch: {
 			grunt: {
@@ -107,6 +122,8 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+
 
 		connect: {
 			app: {
@@ -130,30 +147,40 @@ module.exports = function(grunt) {
 			}
 		},
 
+
+
 		wiredep: {
 			target: {
 				src: [
 					'<%= app %>/**/*.html'
 				],
 				exclude: [
-					'modernizr',
 					'font-awesome',
 					'jquery-placeholder',
 					'foundation'
 				]
 			}
-		}
+		},
+
+
+
+        modernizr: {
+            dist: {
+                'dest': '<%= dist %>/js/modernizr-custom.js'
+            }
+        }
 
 	});
+
 
 
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 
-	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'bower-install', 'modernizr:dist', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 
-	grunt.registerTask('build', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('build', ['compile-sass', 'modernizr:dist', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

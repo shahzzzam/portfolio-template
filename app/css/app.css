@@ -8355,7 +8355,7 @@ body {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/13.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -8548,7 +8548,7 @@ img{
 }
 */
 #wtf-magellan {
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 #nav-name {
