@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 					quiet: true
 				},
 				files: {
-                    '<%= app %>/css/app.css': '<%= app %>/scss/app.scss',
+                    '<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
                 }
 			}
 		},
@@ -80,6 +80,7 @@ module.exports = function(grunt) {
 
 		uglify: {
 			options: {
+                banner: '/*\n <%= pkg.name %> <%= pkg.author.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n',
 				preserveComments: 'some',
 				mangle: false
 			}
@@ -155,6 +156,7 @@ module.exports = function(grunt) {
 					'<%= app %>/**/*.html'
 				],
 				exclude: [
+                    'modernizr',
 					'font-awesome',
 					'jquery-placeholder',
 					'foundation'
@@ -166,16 +168,15 @@ module.exports = function(grunt) {
 
         modernizr: {
             dist: {
-                'dest': '<%= dist %>/js/modernizr-custom.js'
+                'dest': '<%= app %>/js/modernizr-custom.js'
             }
-        }
+        },
 
 	});
 
 
-
-	grunt.registerTask('compile-sass', ['sass']);
-	grunt.registerTask('bower-install', ['wiredep']);
+    grunt.registerTask('compile-sass', ['sass']);
+    grunt.registerTask('bower-install', ['wiredep']);
 
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'modernizr:dist', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);

@@ -8322,11 +8322,10 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/*! my styles */
-/* all app scss styles here */
-/*!
-author: samarthmshah
-*/
+/* my styles */
+/*!  author: samarthmshah */
+/*!  author: samarthmshah */
+/*!  author: samarthmshah */
 /*!  author: samarthmshah */
 /*
 For instance,
@@ -8355,7 +8354,7 @@ body {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/13.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -8541,6 +8540,7 @@ body {
 }
 
 /*!  author: samarthmshah */
+/*!  author: samarthmshah */
 /*
 For instance,
 img{
@@ -8602,6 +8602,7 @@ img{
 }
 
 /*!  author: samarthmshah */
+/*!  author: samarthmshah */
 /*
 For instance,
 img{
@@ -8654,6 +8655,7 @@ img{
   }
 }
 
+/*! Override important stuff */
 .row {
   max-width: 100%;
 }

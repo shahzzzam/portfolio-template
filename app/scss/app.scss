@@ -48,13 +48,14 @@
 @import 'foundation/components/offcanvas';
 @import 'foundation/components/visibility';
 
-/*! my styles */
+/* my styles */
 @import 'appstyles';
 @import 'custom_colors';
 @import 'header';
 @import 'topbar';
 @import 'breaks';
 
+/*! Override important stuff */
 .row{
     max-width: 100%;
 }
