@@ -1,3 +1,6 @@
+@import "settings";
+@import "foundation";
+
 $font_weight: 400;
 
 body {
@@ -26,4 +29,9 @@ body {
 
 #ed-para {
     @extend .write-up;
+}
+
+#mid-line {
+    width: 50%;
+    margin-left: 25%;
 }

@@ -31,12 +31,12 @@
 }
 .break-title {
     position: absolute;
-    width: 98%;
+    width: 100%;
+    padding: 0 0.9375em 0 0.9375em;
     text-align: center;
     h3 {
         color: white;
-        margin-top: 195px;
-        padding: 10px 20px;
+        padding: 165px 0;
         border-radius: 15px;
         @include breakpoint(mobileonly) {
             font-size: 2.25em;
@@ -85,4 +85,18 @@
 .resume-icon {
     @extend .icon;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.resume-break-title {
+    @extend .break-title;
+    h3 {
+        padding: 99px 0;
+        .fa-4x {
+            @include breakpoint(mobileonly) {
+                font-size: 2em;
+            }
+            @include breakpoint(tablet) {
+                font-size: 3em;
+            }
+        }
+    }
 }
