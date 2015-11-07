@@ -52,7 +52,7 @@ particlesJS('dos-dots-doe', {
         },
         'line_linked': {
             'enable': true,
-            'distance': 150,
+            'distance': 250,
             'color': '#ffffff',
             'opacity': 0.4,
             'width': 0.7
@@ -66,7 +66,7 @@ particlesJS('dos-dots-doe', {
             'out_mode': 'out',
             'bounce': false,
             'attract': {
-                'enable': false,
+                'enable': true,
                 'rotateX': 10000,
                 'rotateY': 1200
             }

@@ -8636,7 +8636,7 @@ header #hero-image {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/8.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/14.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -8921,7 +8921,7 @@ header #hero-image {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/11.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/5.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -9194,6 +9194,13 @@ header #hero-image {
 }
 
 /*!  author: samarthmshah */
+/*!  author: samarthmshah */
+/*
+For instance,
+img{
+    @include filter_mixin(blur(5px));
+}
+*/
 footer {
   position: relative;
   background-color: rgba(10, 10, 10, 0.9);
@@ -9247,6 +9254,8 @@ footer #about-this-project span kbd {
   border-style: none;
   border-width: 0;
   background-color: rgba(255, 255, 255, 0.4);
+  font-family: 'monaco', 'Consolas', 'Menlo', 'Courier', monospace;
+  font-size: 0.8rem;
 }
 footer #about-this-project iframe {
   float: left;
@@ -9274,7 +9283,24 @@ footer #about-this-project iframe {
 .logo i {
   margin-right: 0.5rem;
 }
+.logo .fa-circle, .logo .fa-bolt {
+  -moz-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+}
 .logo .fa-bolt {
+  color: #c7c700;
+}
+.logo .fa-bolt:hover {
+  -moz-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+.logo .fa-circle {
   color: red;
 }
 
