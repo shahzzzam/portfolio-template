@@ -8629,7 +8629,6 @@ header {
   margin: 0;
   padding: 0;
   top: 0;
-  z-index: 2;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -8637,7 +8636,7 @@ header #hero-image {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/7.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/6.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -8915,7 +8914,6 @@ header {
   margin: 0;
   padding: 0;
   top: 0;
-  z-index: 2;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -8923,7 +8921,7 @@ header #hero-image {
   opacity: 0.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/15.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/9.jpg");
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
@@ -9136,7 +9134,7 @@ header #hero-image {
 
 .break-title, #about-me-dots #about-me-title {
   position: absolute;
-  width: 100%;
+  width: 98%;
   text-align: center;
 }
 .break-title h3, #about-me-dots #about-me-title h3 {
@@ -9171,6 +9169,7 @@ header #hero-image {
   width: 100%;
   height: 400px;
   position: relative;
+  background-color: rgba(10, 10, 10, 0.9);
   background-image: url("../images/about-me.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;

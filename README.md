@@ -97,7 +97,7 @@ $ fly copy:it
 - Fill up content.
 - Thinking about a parallax project carousel.
 
-*Lot's of UI features are inspired from http://debarghyadas.com/ (@deedy), Apple website, Foundation Building blocks, and a few other websites. But, the code is all written by me.*
+*Lot's of UI features are inspired from @deedy's personal website, Apple website, Foundation Building blocks, and a few other websites. But, the code is all written by me.*
 
 **This is currently WIP since I get less time for this.**
 

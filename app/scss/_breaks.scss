@@ -31,7 +31,7 @@
 }
 .break-title {
     position: absolute;
-    width: 100%;
+    width: 98%;
     text-align: center;
     h3 {
         color: white;
@@ -60,6 +60,7 @@
     height: 400px;
     position: relative;
     background: {
+        color: $dead-gray;
         image: url('../images/about-me.jpg');
         attachment: fixed;
         repeat: no-repeat;
