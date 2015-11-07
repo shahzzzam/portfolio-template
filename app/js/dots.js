@@ -6,7 +6,7 @@ particlesJS('dos-dots-doe', {
             'h': '400px'
         },
         'number': {
-            'value': 70,
+            'value': 90,
             'density': {
                 'enable': true,
                 'value_area': 800

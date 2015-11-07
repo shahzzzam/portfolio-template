@@ -9,7 +9,7 @@ footer {
     .copywrite {
         color: #8f9296;
         font-size: 0.875rem;
-        margin: 3rem 0;
+        margin: 5rem 0;
     }
 
     .footer-form {
@@ -50,6 +50,11 @@ footer {
             color: white;
             margin-right: 5px;
             float: left;
+            kbd {
+                border-style: none;
+                border-width: 0;
+                background-color: rgba(255, 255, 255, 0.4);
+            }
         }
         iframe {
             float: left;

@@ -1,7 +1,7 @@
 /*!  author: samarthmshah */
-@import "custom_filters";
-@import "custom_colors";
-@import "header";
+@import 'custom_filters';
+@import 'custom_colors';
+@import 'header';
 .breakpic {
     box-shadow: inset 0 0 0 2000px $transparent_white_15;
     position: relative;
@@ -15,19 +15,19 @@
 }
 #wxbreakpic {
     @extend .breakpic;
-    background-image: url("../images/workex.jpg");
+    background-image: url('../images/workex.jpg');
 }
 #pbreakpic {
     @extend .breakpic;
-    background-image: url("../images/projects.jpg");
+    background-image: url('../images/projects.jpg');
 }
 #edbreakpic {
     @extend .breakpic;
-    background-image: url("../images/education.jpg");
+    background-image: url('../images/education.jpg');
 }
 #rbreakpic {
     @extend .breakpic;
-    background-image: url("../images/resume-bg.jpg");
+    background-image: url('../images/resume-bg.jpg');
 }
 .break-title {
     position: absolute;
@@ -60,7 +60,7 @@
     height: 400px;
     position: relative;
     background: {
-        image: url("../images/about-me.jpg");
+        image: url('../images/about-me.jpg');
         attachment: fixed;
         repeat: no-repeat;
         size: cover;
