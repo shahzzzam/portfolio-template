@@ -1,0 +1,29 @@
+$font_weight: 400;
+
+body {
+    font-family: 'Myriad Set Pro', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: $font_weight;
+}
+
+.write-up {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px 20px;
+    text-align: center;
+}
+
+#about-me-para {
+    @extend .write-up;
+}
+
+#wx-para {
+    @extend .write-up;
+}
+
+#project-para {
+    @extend .write-up;
+}
+
+#ed-para {
+    @extend .write-up;
+}

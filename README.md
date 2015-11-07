@@ -94,9 +94,12 @@ $ fly copy:it
 ### TODOS
 
 - flightplan doesnt run properly. Works well for the local flights, but having problems with the remote flights.
-- The rest of the website using Foundation5 SASS.
+- Fill up content.
+- Thinking about a parallax project carousel.
+
+*Lot's of UI features are inspired from http://debarghyadas.com/ (@deedy), Apple website, Foundation Building blocks, and a few other websites. But, the code is all written by me.*
 
 **This is currently WIP since I get less time for this.**
-
+*PS: Please also **star** the project if you clone it. *
 ___
 Peace.

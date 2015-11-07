@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 					quiet: true
 				},
 				files: {
-                    '<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
+                    '<%= app %>/css/app.css': ['<%= app %>/scss/app.scss', '<%= app %>/scss/mystyle.scss']
                 }
 			}
 		},
@@ -28,12 +28,15 @@ module.exports = function(grunt) {
 
 		jshint: {
 			options: {
-				jshintrc: '.jshintrc'
+				jshintrc: '.jshintrc',
+                // ignores: [
+                //     'app/js/**/dots.js',
+                // ],
 			},
 			all: [
 				'Gruntfile.js',
 				'<%= app %>/js/**/*.js'
-			]
+			],
 		},
 
 
@@ -163,25 +166,16 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-
-
-
-        modernizr: {
-            dist: {
-                'dest': '<%= app %>/js/modernizr-custom.js'
-            }
-        },
-
 	});
 
 
     grunt.registerTask('compile-sass', ['sass']);
     grunt.registerTask('bower-install', ['wiredep']);
 
-	grunt.registerTask('default', ['compile-sass', 'bower-install', 'modernizr:dist', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 
-	grunt.registerTask('build', ['compile-sass', 'modernizr:dist', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('build', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

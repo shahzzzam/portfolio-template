@@ -1,15 +1,17 @@
 /*!  author: samarthmshah */
 @import 'custom_filters';
+@import 'custom_colors';
 
 #wtf-magellan{
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 #nav-name{
     float: left;
     padding: 5px 10px;
+    letter-spacing: -0.03rem;
     font:{
-        weight: 100;
+        weight: 200;
         size: 1.2em;
     };
     @media (max-width: 830px){
@@ -20,15 +22,20 @@
     };
 }
 
+.sub-nav dd.active a{
+   background: $dead-gray;
+}
+
 .sub-nav{
     float: right;
     > {
-        dd{
+        dd {
             padding: 5px 0px;
             @media (max-width: 715px){
                 font-size: 0.7em;
             }
         }
+
     }
     @media (max-width: 835px){
         clear: both;

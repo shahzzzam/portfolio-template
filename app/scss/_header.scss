@@ -1,22 +1,18 @@
 /*!  author: samarthmshah */
 @import 'custom_colors';
 @import 'custom_filters';
-$font_weight: 400;
-body {
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: $font_weight;
-    background-color: white;
-    opacity: 2;
-}
-.header-box {
+
+header {
     position: relative;
-    height: 100vh; // CSS3 baby
-    width: 100vw; // CSS3 baby
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     top: 0;
+    z-index: 2;
     box-shadow: inset 0 0 0 2000px $transparent_white_15;
     overflow: hidden;
+
     #hero-image {
         // @include filter_mixin(blur(4px));
         opacity: 0.6;
@@ -30,6 +26,7 @@ body {
         }
     }
 }
+
 .intro-text {
     position: absolute;
     top: 50%;
@@ -88,6 +85,7 @@ body {
         margin-left: -193px;
     }
 }
+
 #hero-location {
     position: absolute;
     top: 7px;
@@ -107,16 +105,18 @@ body {
         font-weight: 600;
     }
 }
+
 #follow {
-    @include breakpoint(mobileonly) {
-        display: none;
-    }
     position: absolute;
     bottom: 2px;
     right: 2px;
     color: white;
     opacity: 0.8;
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
 }
+
 .follow-icons-base-class {
     @include breakpoint(mobileonly) {
         @include scale(0.9, 0.9);
@@ -139,24 +139,28 @@ body {
         float: right;
     }
 }
+
 .fb-follow {
     @extend .follow-icons-base-class;
     @include breakpoint(mobileonly) {
         bottom: 45px;
     }
 }
+
 .gh-follow {
     @extend .follow-icons-base-class;
     @include breakpoint(mobileonly) {
         bottom: 20px;
     }
 }
+
 .so-follow {
     @extend .follow-icons-base-class;
     @include breakpoint(mobileonly) {
         bottom: 0;
     }
 }
+
 .icon {
     color: white;
     opacity: 0.9;

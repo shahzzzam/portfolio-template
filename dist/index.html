@@ -6,17 +6,19 @@
     <meta charset="utf-8">
     <!-- If you delete this meta tag World War Z will become a reality -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  For Android Chrome browsers -->
+    <meta name="theme-color" content="#282828">
     <title>Samarth Shah</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
-    <script src="js/vendor/modernizr-custom.min.js"></script>
+    <script src="js/vendor/modernizr.min.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <div id="fb-root"></div>
-    <script>
+    <!-- <div id="fb-root"></div> -->
+    <!-- <script>
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -25,20 +27,23 @@
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1452604911704082";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
 
-    <div class="header-box">
+    <!--  HEADER -->
+    <header>
         <div id="hero-image"></div>
+
         <h3 id="hero-location">New York, NY</h3>
 
         <div id="follow">
-            <div class="fb-follow" data-href="https://www.facebook.com/samarthkg.shah" data-layout="button" data-show-faces="false"></div>
+            <!--  Change the data-href to the link to your profile. -->
+            <!-- <div class="fb-follow" data-href="https://www.facebook.com/samarthkg.shah" data-layout="button" data-show-faces="false"></div> -->
             <div class="gh-follow">
-                <iframe src="http://ghbtns.com/github-btn.html?user=samarthmshah&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
+                <iframe src="https://ghbtns.com/github-btn.html?user=samarthmshah&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe>
             </div>
             <div class="so-follow">
                 <a href="http://stackoverflow.com/users/4283823/samarth-shah">
-                    <img src="http://stackoverflow.com/users/flair/4283823.png" width="208" height="58" alt="profile for Samarth Shah at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Samarth Shah at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                    <img src="http://stackoverflow.com/users/flair/4283823.png" width="200" height="58" alt="profile for Samarth Shah at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Samarth Shah at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
                 </a>
             </div>
             <!-- <div class="q-follow"><span class="quora-follow-button" data-name="Samarth-Shah-23">Follow <a href="https://www.quora.com/Samarth-Shah-23">Samarth Shah</a> on <a href="http://www.quora.com">Quora</a><script type="text/javascript" src="http://www.quora.com/widgets/follow?embed_code=mcexokb"></script></span></div> -->
@@ -50,32 +55,32 @@
             <p>Full Stack Software Engineer</p>
             <ul class="inline-list">
                 <li>
-                    <a data-tooltip aria-haspopup="true" title="LinkedIn" class="has-tip icon" href="https://www.linkedin.com/in/samarthmshah" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="LinkedIn" class="icon" href="https://www.linkedin.com/in/samarthmshah" target="_blank">
                         <i class="fa fa-linkedin fa-3x"></i>
                     </a>
                 </li>
                 <li>
-                    <a title="Github" class="icon" href="https://github.com/samarthmshah" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="Github" class="icon" href="https://github.com/samarthmshah" target="_blank">
                         <i class="fa fa-github fa-3x"></i>
                     </a>
                 </li>
                 <li>
-                    <a title="Google+" class="icon" href="https://plus.google.com/+SamarthShah25/posts" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="Google+" class="icon" href="https://plus.google.com/+SamarthShah25/posts" target="_blank">
                         <i class="fa fa-google-plus fa-3x"></i>
                     </a>
                 </li>
                 <li>
-                    <a title="Mail" class="icon" href="#" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="Mail" class="icon" href="mailto:samarthmshah@gmail.com" target="_blank">
                         <i class="fa fa-envelope fa-3x"></i>
                     </a>
                 </li>
                 <li>
-                    <a title="Facebook" class="icon" href="https://www.facebook.com/samarthkg.shah" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="Facebook" class="icon" href="https://www.facebook.com/samarthkg.shah" target="_blank">
                         <i class="fa fa-facebook fa-3x"></i>
                     </a>
                 </li>
                 <li>
-                    <a title="Stack Overflow" class="icon" href="http://stackoverflow.com/users/4283823/samarth-shah" target="_blank">
+                    <a data-tooltip aria-haspopup="true" title="Stack Overflow" class="icon" href="http://stackoverflow.com/users/4283823/samarth-shah" target="_blank">
                         <i class="fa fa-stack-overflow fa-3x"></i>
                     </a>
                 </li>
@@ -86,131 +91,161 @@
                 </li> -->
             </ul>
         </div>
-    </div>
+    </header>
 
-    <div id="wtf-magellan" data-magellan-expedition="fixed">
-        <span id="nav-name">Samarth Shah</span>
-        <dl class="sub-nav">
-            <dd data-magellan-arrival="workx"><a href="#workx">Experience</a></dd>
-            <dd data-magellan-arrival="projects"><a href="#projects">Projekts!</a></dd>
-            <dd data-magellan-arrival="projects"><a href="#projects">Education</a></dd>
-            <dd data-magellan-arrival="projects"><a href="#projects">Extra-Curricula</a></dd>
-            <dd data-magellan-arrival="projects"><a href="#projects">Hobbies</a></dd>
-            <dd data-magellan-arrival="resume"><a href="#resume">Résumé</a></dd>
-        </dl>
-    </div>
+    <!--  WRITE UP SECTION -->
+    <div id="section">
+        <nav id="wtf-magellan" data-magellan-expedition="fixed">
+            <span id="nav-name">Samarth Shah</span>
+            <dl class="sub-nav">
+                <dd data-magellan-arrival="workx"><a href="#workx">Experience</a></dd>
+                <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
+                <dd data-magellan-arrival="education"><a href="#education">Education</a></dd>
+                <dd data-magellan-arrival="resume"><a href="#resume">Résumé</a></dd>
+            </dl>
+        </nav>
 
-    <br/><br/>
 
-    <div class="row">
-        <div class="small-12 columns panel">
-            <h1>Hello, </h1>
-            <p>This website is under construction+testing. Please visit after a few days</p>
-            <p>Till then, check out my previous website <a href="http://samarth-shah.appspot.com/">here!</a></p>
-            <hr>
-            <section>&copy; Samarth Shah</section>
+
+        <!--  NOTE: -->
+        <div class="row">
+            <div class="small-12 columns panel">
+                <h1>NOTE: </h1>
+                <p>This website is under construction+testing. Please visit after a few days</p>
+                <p>Till then, check out my previous website <a href="http://samarth-shah.appspot.com/">here!</a></p>
+                <hr>
+                <section>&copy; Samarth Shah</section>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 columns">
+        <div class="row">
+            <div class="small-12 medium-12 large-12 columns" id="about-me-dots">
+                <div id="dos-dots-doe"></div>
+                <div id="about-me-title"><h3>About Me</h3></div>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 large-12 columns" id="ambreakpic"></div>
-        <div id="ambreakp">
-            <a name="aboutme"></a>
-            <h3>ABOUT ME</h3>
+        <div class="row">
+            <div id="about-me-para" class="small-6 small-centered medium-6 medium-centered large-6 large-centered columns">
+                <h2><i class="fa fa-user fa-2x"></i></h2>
+                <hr>
+                <article>TL;DR I am a geek, and I love programming. Will fill this section later with better CSS.</article>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <a name="workx"></a>
+        <div class="row">
             <p data-magellan-destination="workx"></p>
+            <div class="small-12 medium-12 large-12 columns" id="wxbreakpic"></div>
+            <div class="break-title">
+                <a name="workx"></a>
+                <h3>Work Experience</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="wx-para" class="small-12 medium-12 large-12 columns">
+                <h2><i class="fa fa-briefcase fa-2x"></i></h2>
+                <article>
+                    1. inAppAd Inc., Software Engineer, Intern
+                    2. Innoventaa Technocrats, Web Developer, Intern
+                </article>
+            </div>
+        </div>
+
+        <div class="row">
+            <p data-magellan-destination="projects"></p>
+            <div class="small-12 medium-12 large-12 columns" id="pbreakpic"></div>
+            <div class="break-title">
+                <a name="projects"></a>
+                <h3>Projects</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="project-para" class="small-12 medium-12 large-12 columns">
+                <h2><i class="fa fa-terminal fa-2x"></i></h2>
+                <article>Please check my <a href="https://github.com/samarthmshah"><img src="images/Octocat.png" alt=":octocat:" height="20" width="20" align="absmiddle"></a> till I update the website.
+                </article>
+            </div>
+        </div>
+
+        <div class="row">
+            <p data-magellan-destination="education"></p>
+            <div class="small-12 medium-12 large-12 columns" id="edbreakpic"></div>
+            <div class="break-title">
+                <a name="education"></a>
+                <h3>Education</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="ed-para" class="small-12 medium-12 large-12 columns">
+                <h2><i class="fa fa-graduation-cap fa-2x"></i></h2>
+                <article>
+                    1. SUNY Albany, MS in CS, 4.0
+                    2. GTU, BS in CS, 3.12
+                </article>
+            </div>
+        </div>
+
+        <div class="row">
+            <p data-magellan-destination="resume"></p>
+            <div class="small-12 medium-12 large-12 columns" id="rbreakpic"></div>
+            <div class="break-title">
+                <a name="resume"></a>
+                <h3>And here's my Résumé...</h3>
+                <a data-tooltip aria-haspopup="true" title="View Resume" class="icon" href="https://drive.google.com/file/d/0B0mmDenTdeFZcF9jTzJIcm9EUHc/view?usp=sharing" target="_blank">
+                    <i class="fa fa-file-text-o fa-4x"></i>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <a name="projects"></a>
+    <!--  FOOTER -->
+    <footer>
+        <div class="row">
+            <a href="https://github.com/samarthmshah/portfolio-template/blob/master/README.md"> <img id="github-fork" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+            <div class="small-12 medium-6 medium-push-6 columns">
+                <p class="logo show-for-small-only"><i class="fa fa-bolt"></i> SAMARTH SHAH </p>
+
+                <form class="footer-form">
+                    <div class="row">
+                        <div class="medium-9 medium-push-3 columns">
+                            <label>
+                                <label for="email" class="contact">Contact Me: </label>
+                                <input type="email" id="email" disabled="disabled" placeholder="Email Address..." />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-9 medium-push-3 columns">
+                            <label>
+                                <textarea disabled="disabled" rows="5" id="message" placeholder="Message..."></textarea>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="medium-9 medium-push-3 columns">
+                                <button class="submit" type="submit" value="Submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="small-12 medium-6 medium-pull-6 columns">
+                <p class="logo hide-for-small-only"> <i class="fa fa-bolt"></i> SAMARTH SHAH </p>
+                <p id="about-this-project">
+                    <span>About this template:</span>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=samarthmshah&repo=portfolio-template&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=samarthmshah&repo=portfolio-template&type=fork&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                </p>
+                <p class="copywrite">Copyright Samarth Shah © 2015</p>
+            </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="small-12 columns">
-            <a name="resume"></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
-            <pre>
-            --------------------------------------------------------------------------------------------------------------
-                                                SAMARTH SHAH
-            --------------------------------------------------------------------------------------------------------------
-            EDUCATION                             EMPLOYMENT
-            State University of NY,               inAppAd, Inc. | SOFTWARE ENGINEERING INTERN
-            Albany                                An ad tech startup providing advertising solutions.
-            M.S. IN COMPUTER SCIENCE              New York City, NY | Summer 2015
-            Expected: Dec 2015 | Albany, NY       * Built an Advertiser-facing API from scratch using Flask and RESTful principles.
-            Cum. GPA: 4.0                         * Devised an API rate-limiting wrapper and response-caching strategy using Redis.
-                                                  * Unit-tested with coverage of 60% and optimized code using a profiler.
-            Gujarat Technological                 * Chiefly handled logging and i18n; and created entire API documentation in
-            University                              Python-Sphinx using reStructured Text.
-            B.S. IN COMPUTER SCIENCE              * Actively worked with Database and DevOps (nginx) team.
-            2009-2014 | Gujarat, India            * Technologies: Python, MySQL, Redis, uWSGI, Git/Bitbucket, Postman, Redmine.
-            Cum. GPA: 3.12 (First Class)
-                                                  Innoventaa Technocrats | WEB DEVELOPER INTERN
-                                                  Project: E-Governance for Road Tendering
-            PERSONALDETAILS                       Ahmedabad, India | MAY 2013-MAY 2014
-            Email:                                * EGRT is a web portal making the experience of bidding and road tendering for the
-            samarthmshah@gmail.com                  supplier company and government organizations seamless.
-            Mobile:                               * Built the views using JSP, Bootstrap CSS, jQuery/AJAX.
-            518-428-0722                          * Built the controllers and models from scratch using Servlets and Hibernate ORM.
-            Address:                                mapping,and Filter API for User Auth.
-            Jersey City, NJ                       * Technologies: J2EE/Java, Apache-Tomcat, SQLYog and Hibernate ORM.
-            Links
-            URL://samarth.xyz
-            GitHub://samarthmshah                PROJECTS
-            LinkedIn://samarthmshah              SomePlaceElse | Python | 2015
-                                                 * A food-recommendation app for NewYork using statistical concepts like
-            EXTRA-CURRICULA                        Associative-Rule Mining. Used Twitter RestAPI, Mashable API and Yelp API.
-            * 95th Percentile in All India GATE  * Code &amp; Paper: Github://SomePlaceElse/SomePlaceElse
-            Exam.                               GameZone | Java | 2015
-            * Worked as a TA for Java in         * Online gaming market prototype having features like: UserAuth. (Hashing),
-            Undergraduate.                         Inventory Management, Shopping Cart, Checkout with PayPal API.
-                                                 * Technologies: Java/J2EE, CSS Bootstrap, jQuery, PostgreSQL, Apache-Tomcat.
-            TECHNICALSKILLS
-            Languages                           EDPrototype | Java | 2014
-            * Java * Python                      * A Java Applet which is able to en/decrypt using Shamir's Secret Sharing, DES, AES,
-            * SQL * JavaScript * HTML5             and RSA.
-            * CSS3(SASS/Bootstrap/Foundation)    * Code&amp; Paper: Github://samarthmshah/Image-Text-Encryption-prototype
-            * LaTeX
-
-            Databases                           Live Cricket Scores Chrome Web Store | JavaScript | 2015
-            * PostgreSQL * MySQL                 * A Google Chrome extension which fetches live cricket updates using CrickInfo API
-            * SQLYog * Redis                       (XMLRSS).
-            * MongoDB (basic)
-                                                Know-Your-City | know-your-city.appspot.com | JavaScript | 2015
-            OS                                   * A website which gives information/news/photos about the city based on the city,
-            * MacOSX * Linux * Windows             state name using WikiMedia API, New York Times API and Google Street View API.
-
-            Tools/Frameworks                    YACDA | Yet Another Community Detection Algorithm | Python | 2015
-            * Grunt * npm/Bower * Ant            * Proposed an innovative way to detect clusters in time-evolving networks. Used
-            * Maven * Apache-Tomcat                Locality Sensitive Hashing to find similarity between nodes, and conductance as a
-            * nginx (basic) * Git * vim            metric to find top candidates.
-            * Eclipse * PyCharm * IntelliJ       * Code &amp; Paper: Github://samarthmshah/YACDA
-            * TeXShop
-            </pre>
-        </div>
-    </div>
-
+    </footer>
 
 
     <!--  ============================================================  -->
-
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.min.js"></script>
