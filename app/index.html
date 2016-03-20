@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <!-- If you delete this meta tag World War Z will become a reality -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  For Android Chrome browsers -->
-    <meta name="theme-color" content="#282828">
+    <!--  Creates a black bar for Android Chrome browsers -->
+    <meta name="theme-color" content="#181818">
+    <!--  SEO -->
+    <meta name="description" content="This is Samarth Shah's personal website and a portfolio page. Can also be used as an awesome portfolio-template.">
     <title>Samarth Shah</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- build:css css/libraries.min.css -->
@@ -25,7 +27,7 @@
 
 <body>
     <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div> -->
     <!-- <script>
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -37,7 +39,8 @@
         }(document, 'script', 'facebook-jssdk'));
     </script> -->
 
-    <header id="header-box">
+    <!--  HEADER -->
+    <header>
         <div id="hero-image"></div>
         <h3 id="hero-location">New York, NY</h3>
 
@@ -100,9 +103,9 @@
     </header>
 
     <!--  WRITE UP SECTION -->
-    <div id="section">
+    <main>
         <nav id="wtf-magellan" data-magellan-expedition="fixed">
-            <span id="nav-name">Samarth Shah</span>
+            <span id="nav-name"><i class="fa fa-code"></i> Samarth Shah</span>
             <dl class="sub-nav">
                 <dd data-magellan-arrival="workx"><a href="#workx">Experience</a></dd>
                 <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
@@ -120,20 +123,22 @@
                 <p>This website is under construction+testing. Please visit after a few days</p>
                 <p>Till then, check out my previous website <a href="http://samarth-shah.appspot.com/">here!</a></p>
                 <hr>
-                <section>&copy; Samarth Shah</section>
+                <aside>&copy; Samarth Shah</aside>
             </div>
         </div>
 
         <div class="row">
-            <div class="small-12 medium-12 large-12 columns" id="break-dots">
+            <div class="small-12 medium-12 large-12 columns" id="about-me-dots">
                 <div id="dos-dots-doe"></div>
-                <div id="about-me-title"><h3>ABOUT ME</h3></div>
+                <div id="about-me-title"><h3>About Me</h3></div>
             </div>
         </div>
 
         <div class="row">
             <div id="about-me-para" class="small-6 small-centered medium-6 medium-centered large-6 large-centered columns">
-                <p>TL;DR So I am a geek, and I love programming. Will fill this section later with better CSS.</p>
+                <h2><i class="fa fa-user fa-2x"></i></h2>
+                <hr/>
+                <article>TL;DR I am a geek, and I love programming. Will fill this section later with better CSS.</article>
             </div>
         </div>
 
@@ -142,16 +147,18 @@
             <div class="small-12 medium-12 large-12 columns" id="wxbreakpic"></div>
             <div class="break-title">
                 <a name="workx"></a>
-                <h3>WORK EXPERIENCE</h3>
+                <h3>Work Experience</h3>
             </div>
         </div>
 
         <div class="row">
             <div id="wx-para" class="small-12 medium-12 large-12 columns">
-                <p>
+                <h2><i class="fa fa-briefcase fa-2x"></i></h2>
+                <hr id="mid-line">
+                <article>
                     1. inAppAd Inc., Software Engineer, Intern
                     2. Innoventaa Technocrats, Web Developer, Intern
-                </p>
+                </article>
             </div>
         </div>
 
@@ -160,15 +167,16 @@
             <div class="small-12 medium-12 large-12 columns" id="pbreakpic"></div>
             <div class="break-title">
                 <a name="projects"></a>
-                <h3>PROJECTS</h3>
+                <h3>Projects</h3>
             </div>
         </div>
 
         <div class="row">
             <div id="project-para" class="small-12 medium-12 large-12 columns">
-                <p>Please check my <a href="https://github.com/samarthmshah">
-                    <img src="images/Octocat.png" alt=":octocat:" height="20" width="20" align="absmiddle"></a>
-                </p>
+                <h2><i class="fa fa-terminal fa-2x"></i></h2>
+                <hr id="mid-line">
+                <article>Please check my <a href="https://github.com/samarthmshah"><img src="images/Octocat.png" alt=":octocat:" height="20" width="20" align="absmiddle"></a> till I update the website.
+                </article>
             </div>
         </div>
 
@@ -177,53 +185,83 @@
             <div class="small-12 medium-12 large-12 columns" id="edbreakpic"></div>
             <div class="break-title">
                 <a name="education"></a>
-                <h3>EDUCATION</h3>
+                <h3>Education</h3>
             </div>
         </div>
 
         <div class="row">
             <div id="ed-para" class="small-12 medium-12 large-12 columns">
-                <p>
+                <h2><i class="fa fa-graduation-cap fa-2x"></i></h2>
+                <hr id="mid-line">
+                <article>
                     1. SUNY Albany, MS in CS, 4.0
                     2. GTU, BS in CS, 3.12
-                </p>
+                </article>
             </div>
         </div>
 
         <div class="row">
             <p data-magellan-destination="resume"></p>
             <div class="small-12 medium-12 large-12 columns" id="rbreakpic"></div>
-            <div class="break-title">
+            <div class="resume-break-title">
                 <a name="resume"></a>
-                <h3>And here's my résumé...</h3>
-                <a href="https://drive.google.com/file/d/0B0mmDenTdeFZcF9jTzJIcm9EUHc/view?usp=sharing"
-                class="button radius resume-icon" target="_blank">
-                       <i class="fa fa-file-code-o fa-2x"></i>
-                </a>
+                <h3>And here's my Résumé...<br/>
+                <a id="resume-icon" data-tooltip aria-haspopup="true" title="View Resume" class="icon" href="https://drive.google.com/file/d/0B0mmDenTdeFZcF9jTzJIcm9EUHc/view?usp=sharing" target="_blank">
+                    <i class="fa fa-file-text-o fa-4x"></i></a></h3>
             </div>
         </div>
-    </div>
+    </main>
 
+    <!--  FOOTER -->
     <footer>
-        <div class="row footer-stuff">
-            <div class="small-12 medium-12 large-12 columns">
-                <p class="slogan">Yo buddy</p>
-                <p class="links">
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
+        <div class="row">
+            <a href="https://github.com/samarthmshah/portfolio-template/blob/master/README.md"> <img id="github-fork" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+            <div class="small-12 medium-6 medium-push-6 columns">
+                <p class="logo show-for-small-only"><i class="fa fa-bolt"></i> SAMARTH SHAH </p>
+
+                <form class="footer-form">
+                    <div class="row">
+                        <div class="medium-9 medium-push-3 columns">
+                            <label>
+                                <label for="email" class="contact">Contact Me: </label>
+                                <input type="email" id="email" disabled="disabled" placeholder="Email Address..." />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-9 medium-push-3 columns">
+                            <label>
+                                <textarea disabled="disabled" rows="5" id="message" placeholder="Message..."></textarea>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="medium-9 medium-push-3 columns">
+                                <button class="submit" type="submit" value="Submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="small-12 medium-6 medium-pull-6 columns">
+                <p class="logo hide-for-small-only">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-bolt fa-stack-1x"></i>
+                    </span> SAMARTH SHAH </p>
+                <p id="about-this-project">
+                    <span><kbd>star/fork</kbd> this template: </span>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=samarthmshah&repo=portfolio-template&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=samarthmshah&repo=portfolio-template&type=fork&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
                 </p>
-                <p class="copywrite">Samarth Shah © 2015</p>
+                <p class="copywrite">Copyright Samarth Shah © 2015</p>
             </div>
         </div>
     </footer>
 
 
-
-
-
-
     <!--  ============================================================  -->
-
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
@@ -272,7 +310,7 @@
             e.src = 'https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e, r)
         }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
+        ga('create', 'UA-61277537-2');
         ga('send', 'pageview');
     </script>
 </body>
